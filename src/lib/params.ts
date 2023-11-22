@@ -3,16 +3,16 @@ import MY_PROJECTS from './projects.params';
 import MY_SKILLS from './skills.params';
 import {
 	Platform,
+	type ExperiencePageParams,
 	type HomePageParams,
 	type ProjectPageParams,
-	type ExperiencePageParams,
-	type SkillsPageParams,
 	type ResumePageParams,
-	type SearchPageParams
+	type SearchPageParams,
+	type SkillsPageParams
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'Know Gautam';
 
 export const NavBar = {
 	home: 'Home',
@@ -43,36 +43,26 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Gautam',
+	lastName: 'Viswanathan',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		`A results-driven freelance full-stack developer | Business analyst | Data analyst, my approach revolves around
+            three key steps: Understand, Analyze, Solve. I start by deeply
+            understanding the intricacies of a problem, then analyze its
+            components rigorously, and finally leverage creativity and technical
+            expertise to deliver effective and scalable solutions. This
+            systematic and thoughtful process ensures I tackle challenges
+            comprehensively, delivering results that stand the test of time.`,
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/gautam-viswanathan' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
-		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
+			link: 'https://www.linkedin.com/in/gautam-viswanathan/'
 		},
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
+			link: 'gautam.k.viswanathan@gmail.com'
 		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
 	]
 };
 
@@ -93,7 +83,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: ''
+	item: 'https://drive.google.com/file/d/1617vFyEoVDiea3N5xLJYcag2QX_DHLqA/view?usp=drive_link'
 };
 
 export const SEARCH: SearchPageParams = {

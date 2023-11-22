@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import type { Skill } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
+	import type { Skill } from '$lib/types';
+	import { onMount } from 'svelte';
 	import UIcon from '../Icon/UIcon.svelte';
 
 	export let items: Array<Skill> = [];

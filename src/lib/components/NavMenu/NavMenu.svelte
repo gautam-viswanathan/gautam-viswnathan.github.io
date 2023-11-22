@@ -1,9 +1,8 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import { HOME, NavBar } from '$lib/params';
 	import { theme, toggleTheme } from '$lib/stores/theme';
-
-	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 
 	let currentRoute = '/';
@@ -11,8 +10,6 @@
 	$: {
 		if ($page) {
 			currentRoute = $page.url.pathname;
-
-			// console.log(currentRoute);
 		}
 	}
 
@@ -30,7 +27,7 @@
 			href={`${base}/`}
 			class="nav-menu-left decoration-none flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
-			<UIcon icon="i-carbon-code" classes="text-2em" />
+			<UIcon icon="i-carbon-code" classes="text-2em " />
 			<span class="ml-2 text-md font-bold hidden md:inline">{HOME.name} {HOME.lastName}</span>
 		</a>
 		<div class="flex flex-row flex-1 self-center justify-center">

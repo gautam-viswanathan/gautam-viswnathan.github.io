@@ -2,8 +2,7 @@
 	import Carrousel from '$lib/components/Carrousel/Carrousel.svelte';
 	import Icon from '$lib/components/Icon/Icon.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
-	import { TITLE_SUFFIX } from '$lib/params';
-	import { HOME, getPlatfromIcon } from '$lib/params';
+	import { HOME, TITLE_SUFFIX, getPlatfromIcon } from '$lib/params';
 	import MY_SKILLS from '$lib/skills.params';
 	import { useTitle } from '$lib/utils/helpers';
 	import { isBlank } from '@riadh-adrani/utils';

@@ -1,12 +1,12 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+	import { getAssetURL } from '$lib/data/assets';
 	import type { Experience } from '$lib/types';
 	import { getMonthName, getTimeDiff } from '$lib/utils/helpers';
 	import Card from '../Card/Card.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
 	import ChipIcon from '../Chip/ChipIcon.svelte';
-	import { getAssetURL } from '$lib/data/assets';
-	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 
 	export let experience: Experience;
@@ -44,7 +44,7 @@
 				</ChipIcon>
 			</div>
 			<div class="text-[var(--accent-text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.description}</div>
+			<div class="experience-description">{experience.shortDescription}</div>
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
 					<ChipIcon
