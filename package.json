@@ -1,6 +1,7 @@
 {
 	"name": "gautam-viswnathan",
 	"version": "0.0.1",
+	"homepage": "https://gautam-viswanathan.github.io/",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
